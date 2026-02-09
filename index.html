@@ -41,22 +41,17 @@
 
           <div class="hidden md:flex space-x-8">
             <a
-              href="#"
+              href="./index.html"
               class="relative text-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
               >Home</a
             >
             <a
-              href="#"
+              href="./about.html"
               class="relative text-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
               >About</a
             >
             <a
-              href="#"
-              class="relative text-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
-              >Projects</a
-            >
-            <a
-              href="#"
+              href="./contact.html"
               class="relative text-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
               >Contact</a
             >
@@ -89,22 +84,17 @@
         class="hidden md:hidden bg-white/60 backdrop-blur-md border-t border-white/30"
       >
         <a
-          href="#"
+          href="./index.html"
           class="block px-4 py-3 relative after:absolute after:left-4 after:bottom-2 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-[calc(100%-2rem)]"
           >Home</a
         >
         <a
-          href="#"
+          href="./about.html"
           class="block px-4 py-3 relative after:absolute after:left-4 after:bottom-2 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-[calc(100%-2rem)]"
           >About</a
         >
         <a
-          href="#"
-          class="block px-4 py-3 relative after:absolute after:left-4 after:bottom-2 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-[calc(100%-2rem)]"
-          >Projects</a
-        >
-        <a
-          href="#"
+          href=".?/contact.html"
           class="block px-4 py-3 relative after:absolute after:left-4 after:bottom-2 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-[calc(100%-2rem)]"
           >Contact</a
         >
@@ -116,7 +106,7 @@
       class="relative pt-24 min-h-[90vh] flex items-center overflow-hidden"
     >
       <div
-        class="absolute inset-0 bg-[url('assets/hero.jpg')] bg-cover bg-center blur-sm"
+        class="absolute inset-0 bg-[url('assets/bg.jpg')] bg-cover bg-center blur-[6px]"
       ></div>
 
       <div
@@ -152,180 +142,411 @@
 
     <!-- Introduction -->
     <section
-      class="container mt-8 md:mx-auto flex min-h-[calc(100vh-4rem)] items-center justify-center px-4"
+      class="container mt-8 md:mx-auto flex min-h-[calc(100vh-4rem)] items-center justify-center px-4 font-inter"
     >
       <div
-        class="flex max-w-4xl flex-col items-center gap-8 text-center sm:gap-10 md:flex-row md:text-left"
+        class="flex max-w-5xl flex-col items-center gap-10 text-center md:flex-row md:text-left bg-white/50 p-6 rounded-3xl backdrop-blur-sm shadow-sm border border-gray-300"
       >
-        <img
-          src="./assets/profile.png"
-          alt="Foto Sukma"
-          class="w-36 rounded-xl object-cover sm:w-44 md:w-60"
-        />
+        <div class="relative group">
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
+          ></div>
 
-        <div class="space-y-4">
-          <h2 class="text-2xl font-bold text-gray-800 sm:text-3xl">
-            Halo, Saya Sukma!
-          </h2>
+          <img
+            src="./assets/profile.png"
+            alt="Foto Sukma"
+            class="relative w-40 rounded-2xl object-cover shadow-2xl sm:w-48 md:w-64 transform transition duration-500 group-hover:scale-[1.02]"
+          />
+        </div>
 
-          <p class="text-gray-600 leading-relaxed p-4 text-justify md:p-0">
-            Saya I Putu Sukma Widyantara, seorang mahasiswa Teknik
-            Telekomunikasi ITS 2024. Saya terjun ke dalam jurusan ini untuk
-            mempelajari ilmu jaringan internet yang berguna untuk memajukan
-            perkembangan Indonesia dalam sektor telekomunikasi. Saya mulai
-            mempelajari ilmu IT sejak SMP secara otodidak.
-          </p>
+        <div class="flex-1 space-y-5 p-2">
+          <div class="space-y-2">
+            <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl">
+              Halo, Saya <span class="text-primary">Sukma!</span>
+            </h2>
+          </div>
 
-          <p class="text-gray-600 leading-relaxed p-4 text-justify md:p-0">
-            Bahasa pemrograman yang telah saya pelajari hingga saat ini meliputi
-            HTML, CSS, JavaScript, PHP, Python, C, dan C++. Bidang yang sudah
-            saya dalami antara lain infrastruktur jaringan, pengembangan
-            website, digital marketing, serta Internet of Things (IoT).
-          </p>
+          <div
+            class="space-y-4 text-gray-600 leading-relaxed text-sm sm:text-base text-justify"
+          >
+            <p class="text-justify">
+              Saya
+              <span class="font-semibold text-gray-800"
+                >I Putu Sukma Widyantara</span
+              >, mahasiswa
+              <span class="text-primary font-medium"
+                >Teknik Telekomunikasi ITS 2024</span
+              >. Saya memiliki visi untuk memajukan sektor telekomunikasi
+              Indonesia melalui penguasaan infrastruktur jaringan internet,
+              bidang yang telah saya tekuni secara otodidak sejak SMP.
+            </p>
+
+            <div class="space-y-3 mt-4">
+              <p class="font-medium text-gray-800 mt-4">
+                Keahlian & Teknologi:
+              </p>
+              <div class="flex flex-wrap justify-center md:justify-start gap-2">
+                <span
+                  class="px-3 py-1 bg-secondary text-gray-700 text-xs font-medium rounded-md border border-gray-200"
+                  >HTML</span
+                >
+                <span
+                  class="px-3 py-1 bg-secondary text-gray-700 text-xs font-medium rounded-md border border-gray-200"
+                  >CSS</span
+                >
+                <span
+                  class="px-3 py-1 bg-secondary text-gray-700 text-xs font-medium rounded-md border border-gray-200"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-3 py-1 bg-secondary text-gray-700 text-xs font-medium rounded-md border border-gray-200"
+                  >PHP</span
+                >
+                <span
+                  class="px-3 py-1 bg-secondary text-gray-700 text-xs font-medium rounded-md border border-gray-200"
+                  >Python</span
+                >
+                <span
+                  class="px-3 py-1 bg-secondary text-gray-700 text-xs font-medium rounded-md border border-gray-200"
+                  >C++</span
+                >
+              </div>
+
+              <div
+                class="flex flex-wrap justify-center md:justify-start gap-2 pt-1"
+              >
+                <span
+                  class="flex items-center gap-1 text-xs font-medium text-accent"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  Network Infrastructure
+                </span>
+                <span
+                  class="flex items-center gap-1 text-xs font-medium text-accent"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  IoT
+                </span>
+                <span
+                  class="flex items-center gap-1 text-xs font-medium text-accent"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  Web Development
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Experience Section -->
-    <section class="max-w-7xl mx-auto">
-      <div class="flex justify-between items-end mb-8">
-        <h2
-          class="text-4xl md:text-5xl font-bold text-[#1d1d1f] tracking-tight"
-        >
-          Experience and Journey.
-        </h2>
+    <section class="max-w-7xl mx-auto px-4 py-12 font-inter">
+      <div
+        class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-10"
+      >
+        <div class="space-y-1">
+          <span class="text-primary font-bold tracking-widest text-xs uppercase"
+            >Jejak Karir</span
+          >
+          <h2
+            class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight"
+          >
+            Pengalaman dan
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent"
+              >Perjalanan.</span
+            >
+          </h2>
+        </div>
         <a
           href="#"
-          class="text-primary hover:underline font-medium flex items-center"
+          class="group text-primary font-semibold flex items-center gap-2 transition-all"
         >
-          View LinkedIn <span class="ml-1 text-xs">❯</span>
+          Lihat LinkedIn
+          <span
+            class="flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 group-hover:bg-primary group-hover:text-white transition-colors text-[10px]"
+            >❯</span
+          >
         </a>
       </div>
 
-      <div class="flex overflow-x-auto space-x-6 pb-10 no-scrollbar snap-x">
+      <div
+        class="flex overflow-x-auto space-x-6 pb-12 no-scrollbar snap-x scroll-smooth"
+      >
+        <!-- Card 1 -->
         <div
-          class="min-w-[320px] md:min-w-[380px] bg-white rounded-[2.5rem] p-8 flex flex-col justify-between shadow-sm snap-start"
+          class="min-w-[320px] md:min-w-[400px] bg-white rounded-[2.5rem] p-10 flex flex-col justify-between shadow-[0_10px_40px_-15px_rgba(0,0,0,0.08)] border border-gray-50 snap-start hover:shadow-md transition-shadow group"
         >
           <div>
-            <div class="flex items-center space-x-2 mb-4">
-              <span class="text-appleRed">⚡</span>
-              <span class="text-appleRed font-semibold text-sm"
+            <div class="flex items-center space-x-3 mb-6">
+              <div
+                class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-xl"
+              >
+                ⚡
+              </div>
+              <span
+                class="text-accent font-bold text-sm tracking-wide uppercase"
                 >Software Engineer</span
               >
             </div>
-            <h3 class="text-3xl font-bold text-[#1d1d1f] leading-tight mb-2">
+            <h3
+              class="text-3xl font-bold text-gray-900 leading-tight mb-3 group-hover:text-primary transition-colors"
+            >
               Avalon AI Group
             </h3>
-            <p class="text-gray-500 text-lg leading-snug">
-              Developing AI analytics automation. Staff Software Engineer at
+            <p class="text-gray-500 text-lg leading-relaxed">
+              Mengembangkan otomasi analitik AI. Staff Software Engineer di
               Avalon Community ITS.
             </p>
-            <p
-              class="text-gray-400 mt-2 text-sm uppercase tracking-wider font-semibold"
-            >
-              Nov 2025 - Present
-            </p>
+            <div class="mt-6 flex items-center gap-2">
+              <div class="h-px w-8 bg-gray-200"></div>
+              <p
+                class="text-gray-400 text-xs uppercase tracking-widest font-bold"
+              >
+                Nov 2025 - Sekarang
+              </p>
+            </div>
           </div>
           <button
-            class="mt-8 bg-appleRed text-white px-6 py-2.5 rounded-full font-semibold w-fit hover:opacity-90 transition"
+            class="mt-10 bg-gray-900 text-white px-8 py-3.5 rounded-2xl font-bold w-fit hover:bg-primary transition-all active:scale-95"
           >
-            View Project
+            Lihat Proyek
           </button>
         </div>
 
+        <!-- Card 2 -->
         <div
-          class="min-w-[320px] md:min-w-[380px] bg-white rounded-[2.5rem] p-8 flex flex-col justify-between shadow-sm snap-start"
+          class="min-w-[320px] md:min-w-[400px] bg-white rounded-[2.5rem] p-10 flex flex-col justify-between shadow-[0_10px_40px_-15px_rgba(0,0,0,0.08)] border border-gray-50 snap-start hover:shadow-md transition-shadow group"
         >
           <div>
-            <div class="flex items-center space-x-2 mb-4">
-              <span class="text-appleRed">💻</span>
-              <span class="text-appleRed font-semibold text-sm"
-                >Full-time Web Dev</span
+            <div class="flex items-center space-x-3 mb-6">
+              <div
+                class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-xl"
+              >
+                💻
+              </div>
+              <span
+                class="text-accent font-bold text-sm tracking-wide uppercase"
+                >Web Dev Penuh Waktu</span
               >
             </div>
-            <h3 class="text-3xl font-bold text-[#1d1d1f] leading-tight mb-2">
+            <h3
+              class="text-3xl font-bold text-gray-900 leading-tight mb-3 group-hover:text-primary transition-colors"
+            >
               PT GATRCO MITRA
             </h3>
-            <p class="text-gray-500 text-lg leading-snug">
-              Developing learning management websites. Focused on Front-end &
-              Back-end Web Dev.
+            <p class="text-gray-500 text-lg leading-relaxed">
+              Mengembangkan website sistem manajemen pembelajaran. Fokus pada
+              Front-end & Back-end Web Dev.
             </p>
-            <p
-              class="text-gray-400 mt-2 text-sm uppercase tracking-wider font-semibold"
-            >
-              Sep 2025 - Dec 2025
-            </p>
+            <div class="mt-6 flex items-center gap-2">
+              <div class="h-px w-8 bg-gray-200"></div>
+              <p
+                class="text-gray-400 text-xs uppercase tracking-widest font-bold"
+              >
+                Sep 2025 - Des 2025
+              </p>
+            </div>
           </div>
           <button
-            class="mt-8 bg-appleRed text-white px-6 py-2.5 rounded-full font-semibold w-fit hover:opacity-90 transition"
+            class="mt-10 bg-gray-900 text-white px-8 py-3.5 rounded-2xl font-bold w-fit hover:bg-primary transition-all active:scale-95"
           >
-            See Certificate
+            Lihat Sertifikat
           </button>
         </div>
 
+        <!-- Card 3 -->
         <div
-          class="min-w-[320px] md:min-w-[380px] bg-white rounded-[2.5rem] p-8 flex flex-col justify-between shadow-sm snap-start"
+          class="min-w-[320px] md:min-w-[400px] bg-white rounded-[2.5rem] p-10 flex flex-col justify-between shadow-[0_10px_40px_-15px_rgba(0,0,0,0.08)] border border-gray-50 snap-start hover:shadow-md transition-shadow group"
         >
           <div>
-            <div class="flex items-center space-x-2 mb-4">
-              <span class="text-appleRed">🎓</span>
-              <span class="text-appleRed font-semibold text-sm"
-                >Virtual Intern</span
+            <div class="flex items-center space-x-3 mb-6">
+              <div
+                class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-xl"
+              >
+                🎓
+              </div>
+              <span
+                class="text-accent font-bold text-sm tracking-wide uppercase"
+                >Magang Virtual</span
               >
             </div>
-            <h3 class="text-3xl font-bold text-[#1d1d1f] leading-tight mb-2">
+            <h3
+              class="text-3xl font-bold text-gray-900 leading-tight mb-3 group-hover:text-primary transition-colors"
+            >
               Luar sekolah x Rakamin
             </h3>
-            <p class="text-gray-500 text-lg leading-snug">
-              Working on various web development projects and participating in
-              PBI activities.
+            <p class="text-gray-500 text-lg leading-relaxed">
+              Mengerjakan berbagai proyek pengembangan web dan berpartisipasi
+              dalam kegiatan PBI.
             </p>
-            <p
-              class="text-gray-400 mt-2 text-sm uppercase tracking-wider font-semibold"
-            >
-              Jul 2025 - Aug 2025
-            </p>
+            <div class="mt-6 flex items-center gap-2">
+              <div class="h-px w-8 bg-gray-200"></div>
+              <p
+                class="text-gray-400 text-xs uppercase tracking-widest font-bold"
+              >
+                Jul 2025 - Agu 2025
+              </p>
+            </div>
           </div>
           <button
-            class="mt-8 bg-appleRed text-white px-6 py-2.5 rounded-full font-semibold w-fit hover:opacity-90 transition"
+            class="mt-10 bg-gray-900 text-white px-8 py-3.5 rounded-2xl font-bold w-fit hover:bg-primary transition-all active:scale-95"
           >
-            Try 3 months free
+            Coba 3 bulan gratis
           </button>
         </div>
 
+        <!-- Card 4 -->
         <div
-          class="min-w-[320px] md:min-w-[380px] bg-white rounded-[2.5rem] p-8 flex flex-col justify-between shadow-sm snap-start"
+          class="min-w-[320px] md:min-w-[400px] bg-white rounded-[2.5rem] p-10 flex flex-col justify-between shadow-[0_10px_40px_-15px_rgba(0,0,0,0.08)] border border-gray-50 snap-start hover:shadow-md transition-shadow group"
         >
           <div>
-            <div class="flex items-center space-x-2 mb-4">
-              <span class="text-appleRed">🎨</span>
-              <span class="text-appleRed font-semibold text-sm"
+            <div class="flex items-center space-x-3 mb-6">
+              <div
+                class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-xl"
+              >
+                🎨
+              </div>
+              <span
+                class="text-accent font-bold text-sm tracking-wide uppercase"
                 >Apprenticeship</span
               >
             </div>
-            <h3 class="text-3xl font-bold text-[#1d1d1f] leading-tight mb-2">
+            <h3
+              class="text-3xl font-bold text-gray-900 leading-tight mb-3 group-hover:text-primary transition-colors"
+            >
               PT Bima Digital
             </h3>
-            <p class="text-gray-500 text-lg leading-snug">
-              Developing user interfaces and collaborating with the design team.
+            <p class="text-gray-500 text-lg leading-relaxed">
+              Mengembangkan antarmuka pengguna dan berkolaborasi dengan tim
+              desain.
             </p>
-            <p
-              class="text-gray-400 mt-2 text-sm uppercase tracking-wider font-semibold"
-            >
-              Jan 2025 - Jun 2025
-            </p>
+            <div class="mt-6 flex items-center gap-2">
+              <div class="h-px w-8 bg-gray-200"></div>
+              <p
+                class="text-gray-400 text-xs uppercase tracking-widest font-bold"
+              >
+                Jan 2025 - Jun 2025
+              </p>
+            </div>
           </div>
           <button
-            class="mt-8 bg-appleRed text-white px-6 py-2.5 rounded-full font-semibold w-fit hover:opacity-90 transition"
+            class="mt-10 bg-gray-900 text-white px-8 py-3.5 rounded-2xl font-bold w-fit hover:bg-primary transition-all active:scale-95"
           >
-            See Portfolio
+            Lihat Portofolio
           </button>
         </div>
       </div>
     </section>
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
 
+    <!-- CTA Copywriting 1 -->
+    <section
+      class="w-full min-h-fit bg-gradient-to-r from-primary to-accent font-inter py-16 px-6 overflow-hidden"
+    >
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10"
+      >
+        <div class="relative shrink-0">
+          <div class="absolute inset-0 bg-white/20 blur-3xl rounded-full"></div>
+          <img
+            src="./assets/meow.png"
+            alt="Profile"
+            class="relative w-32 h-32 md:w-48 md:h-48 object-cover rounded-2xl rotate-3 hover:rotate-0 transition-transform duration-500 shadow-2xl border-4 border-white/20"
+          />
+        </div>
+
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left text-white max-w-2xl p-5"
+        >
+          <h1
+            class="text-3xl md:text-5xl font-extrabold mb-4 tracking-tight leading-tight"
+          >
+            Mari Terhubung <span class="text-secondary">Lebih Dekat</span>
+          </h1>
+
+          <p
+            class="text-base md:text-lg mb-8 opacity-90 leading-relaxed font-medium"
+          >
+            Dapatkan inspirasi desain harian, tips coding, dan update proyek
+            terbaru saya. Mari bertukar ide dan tumbuh bersama di komunitas
+            Instagram.
+          </p>
+
+          <a
+            href="https://instagram.com/username_kamu"
+            target="_blank"
+            class="group relative inline-flex items-center justify-center px-10 py-3.5 font-bold text-primary transition-all duration-300 bg-secondary rounded-full shadow-xl hover:bg-white hover:shadow-2xl active:scale-95"
+          >
+            <span>Kunjungi Instagram</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
-    <footer class="mt-24 border-t border-gray-200 bg-white">
+    <footer class="border-gray-200 bg-white">
       <div class="container mx-auto px-4 py-10">
         <div
           class="flex flex-col items-center gap-6 md:flex-row md:justify-between md:gap-0"

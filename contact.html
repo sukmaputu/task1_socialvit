@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+            colors: {
+              primary: "#2b7fff",
+              secondary: "#f3f4f6",
+              accent: "#ff4d73",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-inter bg-white text-gray-800">
+    <nav
+      class="fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-sm"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="text-blue-400 font-bold text-xl">SukmaWeb</div>
+
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="./index.html"
+              class="relative text-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+              >Home</a
+            >
+            <a
+              href="./about.html"
+              class="relative text-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+              >About</a
+            >
+            <a
+              href="./contact.html"
+              class="relative text-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+              >Contact</a
+            >
+          </div>
+
+          <button
+            id="menu-btn"
+            class="md:hidden focus:outline-none"
+            aria-label="Toggle Menu"
+          >
+            <svg
+              class="w-6 h-6 text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white/60 backdrop-blur-md border-t border-white/30"
+      >
+        <a
+          href="./index.html"
+          class="block px-4 py-3 relative after:absolute after:left-4 after:bottom-2 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-[calc(100%-2rem)]"
+          >Home</a
+        >
+        <a
+          href="./about.html"
+          class="block px-4 py-3 relative after:absolute after:left-4 after:bottom-2 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-[calc(100%-2rem)]"
+          >About</a
+        >
+        <a
+          href="./contact.html"
+          class="block px-4 py-3 relative after:absolute after:left-4 after:bottom-2 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-[calc(100%-2rem)]"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section
+      class="bg-gradient-to-r from-accent to-primary font-inter text-secondary min-h-screen flex items-center py-20 px-6 lg:px-24"
+    >
+      <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div class="flex flex-col justify-center">
+          <div class="mb-8">
+            <span
+              class="border border-secondary/30 rounded-full px-5 py-2 text-[10px] tracking-[0.2em] uppercase text-secondary"
+            >
+              Contacts
+            </span>
+          </div>
+
+          <!-- Heading (Aksen menggunakan warna accent) -->
+          <h1 class="text-5xl lg:text-7xl font-serif leading-tight mb-8">
+            I Look Forward to <br />
+            Connecting With You!
+          </h1>
+
+          <!-- Deskripsi (Warna secondary dengan opasitas) -->
+          <p class="text-secondary/70 max-w-md mb-10 leading-relaxed">
+            Whether you have a question, a collaboration idea, or just want to
+            share your thoughts, feel free to reach out.
+          </p>
+        </div>
+
+        <!-- Kolom Kanan: Form -->
+        <div class="flex flex-col justify-end pb-4">
+          <form action="#" class="space-y-12">
+            <!-- Input fields menggunakan border secondary -->
+            <div class="border-b border-secondary/20 pb-2">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="bg-transparent w-full outline-none py-2 placeholder-secondary/40 focus:border-accent transition-colors"
+              />
+            </div>
+
+            <div class="border-b border-secondary/20 pb-2">
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="bg-transparent w-full outline-none py-2 placeholder-secondary/40 focus:border-accent transition-colors"
+              />
+            </div>
+
+            <div class="border-b border-secondary/20 pb-2">
+              <textarea
+                placeholder="Your Message"
+                rows="1"
+                class="bg-transparent w-full outline-none py-2 placeholder-secondary/40 focus:border-accent transition-colors resize-none"
+              ></textarea>
+            </div>
+
+            <!-- Tombol Submit (Menggunakan warna secondary agar kontras di bg gelap) -->
+            <button
+              type="submit"
+              class="bg-secondary text-slate-950 font-bold w-full py-4 rounded-full hover:bg-accent hover:text-white transition-all uppercase text-sm tracking-tighter"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 relative group">
+      <div class="max-w-full mx-auto px-6">
+        <div class="border-t border-secondary/10 mb-16"></div>
+
+        <div class="relative">
+          <div
+            id="slider"
+            class="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory"
+          >
+            <div
+              class="flex-shrink-0 w-[calc(50%-8px)] md:w-[calc(33.33%-11px)] lg:w-[calc((100%-80px)/6)] aspect-square snap-start"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1516724562728-afc824a36e84?w=400&h=400&fit=crop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[calc(50%-8px)] md:w-[calc(33.33%-11px)] lg:w-[calc((100%-80px)/6)] aspect-square snap-start"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=400&h=400&fit=crop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[calc(50%-8px)] md:w-[calc(33.33%-11px)] lg:w-[calc((100%-80px)/6)] aspect-square snap-start"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=400&fit=crop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[calc(50%-8px)] md:w-[calc(33.33%-11px)] lg:w-[calc((100%-80px)/6)] aspect-square snap-start"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1515162305285-0293e4767cc2?w=400&h=400&fit=crop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[calc(50%-8px)] md:w-[calc(33.33%-11px)] lg:w-[calc((100%-80px)/6)] aspect-square snap-start"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1452784444945-3f422708fe5e?w=400&h=400&fit=crop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[calc(50%-8px)] md:w-[calc(33.33%-11px)] lg:w-[calc((100%-80px)/6)] aspect-square snap-start"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=400&fit=crop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[calc(50%-8px)] md:w-[calc(33.33%-11px)] lg:w-[calc((100%-80px)/6)] aspect-square snap-start"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=400&h=400&fit=crop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[calc(50%-8px)] md:w-[calc(33.33%-11px)] lg:w-[calc((100%-80px)/6)] aspect-square snap-start"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=400&fit=crop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[calc(50%-8px)] md:w-[calc(33.33%-11px)] lg:w-[calc((100%-80px)/6)] aspect-square snap-start"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=400&fit=crop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[calc(50%-8px)] md:w-[calc(33.33%-11px)] lg:w-[calc((100%-80px)/6)] aspect-square snap-start"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=400&fit=crop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[calc(50%-8px)] md:w-[calc(33.33%-11px)] lg:w-[calc((100%-80px)/6)] aspect-square snap-start"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex-shrink-0 w-[calc(50%-8px)] md:w-[calc(33.33%-11px)] lg:w-[calc((100%-80px)/6)] aspect-square snap-start"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1500673890940-010919980a4a?w=400&h=400&fit=crop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <button
+            id="prevBtn"
+            class="absolute -left-2 top-1/2 -translate-y-1/2 bg-accent text-white p-4 rounded-full opacity-0 group-hover:opacity-100 transition-all z-20 shadow-2xl"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              viewBox="0 0 24 24"
+            >
+              <path d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button
+            id="nextBtn"
+            class="absolute -right-2 top-1/2 -translate-y-1/2 bg-accent text-white p-4 rounded-full opacity-0 group-hover:opacity-100 transition-all z-20 shadow-2xl"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              viewBox="0 0 24 24"
+            >
+              <path d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="border-b border-secondary/10 mt-16"></div>
+      </div>
+    </section>
+
+    <div class="fixed bottom-10 right-10 z-50">
+      <button
+        class="bg-primary p-5 rounded-full shadow-2xl hover:scale-110 transition-transform"
+      >
+        <svg
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+
+    <script>
+      const slider = document.getElementById("slider");
+      const btnNext = document.getElementById("nextBtn");
+      const btnPrev = document.getElementById("prevBtn");
+
+      btnNext.addEventListener("click", () => {
+        const scrollAmount = slider.offsetWidth;
+        slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      });
+
+      btnPrev.addEventListener("click", () => {
+        const scrollAmount = slider.offsetWidth;
+        slider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      });
+    </script>
+
+    <footer class="border-gray-200 bg-white">
+      <div class="container mx-auto px-4 py-10">
+        <div
+          class="flex flex-col items-center gap-6 md:flex-row md:justify-between md:gap-0"
+        >
+          <div class="text-center md:text-left">
+            <h3 class="text-lg font-semibold text-gray-800">SukmaWeb</h3>
+            <p class="mt-1 text-sm text-gray-500">
+              Mahasiswa Teknik Telekomunikasi ITS
+            </p>
+          </div>
+
+          <div class="flex gap-6 text-sm text-gray-600">
+            <a href="#" class="hover:text-blue-600 transition">Home</a>
+            <a href="#" class="hover:text-blue-600 transition">About</a>
+            <a href="#" class="hover:text-blue-600 transition">Projects</a>
+            <a href="#" class="hover:text-blue-600 transition">Contact</a>
+          </div>
+        </div>
+
+        <div
+          class="mt-8 border-t border-gray-100 pt-6 text-center text-sm text-gray-500"
+        >
+          © 2026 Sukma Widyantara. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
